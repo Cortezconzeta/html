@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Etiqueta details</h2>
+<p>Contiene la etiqueta summary, que permite mostrar un elemento como _<summary>_ ¿Qué día es hoy? _</summary>_, que genera un desplegable oculto al hacer clic encima.</p> Con el atributo open, el desplegable es visible desde el principio.
+
+<details>
+    <summary>¿Qué día es hoy?</summary>
+    <p>Hoy es jjueves 15 de febrero</p>
+</details>
+
+<p>La etiqueta dialogue permite hacer modales, que es un mensaje emergente que se puede abrir y cerrar. Necesita de javaScript para funcionar</p>
+<p>En Js, necesitamos haber usado tres selectores de id en el fichero de html: en el boton de abrir, un boton para cerrar y el modal propiamente.</p>
+
+<button id="abrir">Abrir</button>
+<dialog id="modal"> 
+    <h2>Esto es un ejemplo de ventana modal</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius earum tempora dolores quibusdam inventore sequi deserunt maiores est similique quaerat iure molestiae itaque vitae non suscipit nihil sapiente commodi quo officiis, facere accusamus! Laboriosam debitis possimus magnam, repellendus aliquid natus.</p>
+    <button id="cerrar">Cerrar ventana</button>
+</dialog>
+
+
+<script>
+    //window+nombre_id+.+evento
+    window.abrir.addEventListener("click",() => {window.modal.showModal()} )
+    window.cerrar.addEventListener("click",() => {window.modal.close()} )
+
+
+</script>
+</body>
+</html>
