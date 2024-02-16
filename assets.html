@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tatiana">
+    <meta name="description" content="">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Multimedia</title>
+</head>
+<body>
+    <main>
+        <h2>Assets</h2>
+        <p>Los archivos multimedia se incluyen en el conjjunto de recursos o assets de la página web.</p>
+        <h3>Audio</h3>
+        <p>Para colocar un fichero de audio, usaremos la etiqueta contenedora audio, que genera automáticamente el atributo src="ruta_del__fichero" que podrá controlar el usuario al colocar el atributo controls. Si bien el contenido se carga mediante el atributp src, audio es una etiqueta contenedora puesto que también puede incluir la etiqueta source y, por ende, se podrán abrir unos ficheros de audio u otros en función de las condiciones que establescamos.</p>
+        <audio src="assets/aplaudiments.mp3" controls></audio>
+
+        <h3>Vídeo</h3>
+        <p>Para colocar un vídeo, tenemos dos etiquetas:</p>
+        <h4>La etiqueta vídeo</h4>
+        <p>Para colocar un fichero de vídeo, usaremos la etiqueta contenedora vídeo, que genera automáticamente el atributo src="ruta_del__fichero", lo que permitirá al usuario ver el vídeo. Puede tener los siguientes atributos: controls (para que los usuarios puedan controlarlo), autoplay (para que se reprodusca automáticamente), loop (para que se reproduzca de forma continua), muted (para silenciarlo) </p>
+        <video src="assets/tiempo.mp4" autoplay loop></video>
+        <video src="assets/Basic heart latte art.mp4" controls autoplay loop></video>
+        <h4>La etiqueta iframe</h4>
+        <p>Podemos incrustar un vídeo de una página externa mediante la etiqueta iframe, que genera dos atributos: src y frameborder (para establecer el grosor del borde). También puede tener otros:  title (descripción que saldrá al hacer click sobre el vídeo)="YouTube video player", allow (establece los permisos que tiene el vídeo)="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture (para que se pueda ver el vídeo en una pantalla pequeña que queda en segundo plano); web-share" . Por ejemplo, en Youtube, hacemos click en compartir y después en insertar para obtener la etiqueta iframe de un video en concreto.</p>
+        <iframe src="" frameborder="0"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VOUwTS13l9U?si=qc-c4uRGdJizETUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p>iframe también se puede usar para insertar mapas.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777218051296!2d-3.694702025265297!3d40.41378585582041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses!2ses!4v1708069798315!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+
+    
+</body>
+</html>
